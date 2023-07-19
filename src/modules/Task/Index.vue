@@ -25,7 +25,7 @@
 
 <script lang="ts" setup>
 import type { TableColumnCtx } from "element-plus";
-import { reactive, ref } from "vue";
+import { onMounted, reactive, ref } from "vue";
 import { Check, Close } from "@element-plus/icons-vue";
 const buttonloading = ref(false);
 interface task {

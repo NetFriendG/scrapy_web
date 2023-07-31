@@ -1,8 +1,8 @@
 <template>
   <!-- 侧边导航栏 -->
-  <div class="left">
+  <el-aside width="200px">
     <NavigationBar></NavigationBar>
-  </div>
+  </el-aside>
   <!-- 面包屑 -->
   <div class="right">
     <div class="right-top">
@@ -20,11 +20,6 @@ import Breadcrumb from "@/common/components/Breadcrumb/Index.vue";
 </script>
 
 <style>
-.left {
-  width: 20vh;
-  height: 100%;
-  background-color: #001529;
-}
 .right {
   width: 100%;
   flex-direction: column;
@@ -36,5 +31,8 @@ import Breadcrumb from "@/common/components/Breadcrumb/Index.vue";
 }
 .right-bootom {
   padding: 18px;
+}
+.el-scrollbar__wrap--hidden-default {
+  background-color: #001529;
 }
 </style>

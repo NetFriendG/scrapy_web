@@ -1,5 +1,5 @@
 <template>
-  <div class="menu">
+  <el-scrollbar class="menu">
     <!-- <h5 class="mb-2">爬虫管理系统</h5> -->
     <el-menu
       class="left-menu"
@@ -26,7 +26,7 @@
         <el-menu-item index="scrapyManage/task">任务列表</el-menu-item>
       </el-sub-menu>
     </el-menu>
-  </div>
+  </el-scrollbar>
 </template>
 
 <script lang="ts" setup>
@@ -48,7 +48,6 @@ const handleClose = (key: string, keyPath: string[]) => {
 .mb-2 {
   position: relative;
 }
-
 
 ::v-deep .el-menu {
   border: 0;

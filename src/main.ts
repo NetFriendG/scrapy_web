@@ -10,7 +10,6 @@ import "element-plus/dist/index.css"
 // 类型
 
 const router = initRouter(route);
-
 const app: any = createApp(App);
 const pinia = createPinia;
 
